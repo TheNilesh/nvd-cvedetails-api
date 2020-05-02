@@ -3,6 +3,8 @@
 [NVD vulnerability data feeds](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED) are published as year-wise JSON files in gzip format. This makes fetching CVE details for particular CVE ID very difficult.
 
 This project aims to mirror CVE Details into MongoDB and then provide queryable REST-API on top of that.
+This will also set background cron-job to keep local DB in sync with NIST data feeds as suggested [here](https://nvd.nist.gov/vuln/data-feed).
+
 
     GET http://localhost:3000/cvedetails/CVE-2017-0001
     {
@@ -70,3 +72,8 @@ This project aims to mirror CVE Details into MongoDB and then provide queryable 
  
      GET http://localhost:3000/cvedetails?description=*RDP*
      GET http://localhost:3000/cvedetails?impact.severity=HIGH&publishedDate=lastMonth
+
+## Usage
+
+    npm i
+    node index.js 2020 2019 2018 2017 2016 # Start serving CVE data for specific years as JSON-REST API
