@@ -1,4 +1,4 @@
-# NVD CVEDetails as JSON-REST API
+# NVD CVE Details as JSON-REST API
 
 [NVD vulnerability data feeds](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED) are published as year-wise JSON files in gzip format. This makes fetching CVE details for particular CVE ID very difficult.
 
