@@ -1,6 +1,6 @@
 # NVD CVEDetails as JSON-REST API
 
-NVD is offering a vulnerability data feed using the [JSON format](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED). These data feeds are published as year-wise JSON files in gzip format. This makes fetching CVE details for particular CVE ID very difficult.
+[NVD vulnerability data feeds](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED) are published as year-wise JSON files in gzip format. This makes fetching CVE details for particular CVE ID very difficult.
 
 This project aims to mirror CVE Details into MongoDB and then provide queryable REST-API on top of that.
 
